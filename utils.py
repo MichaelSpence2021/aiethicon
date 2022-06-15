@@ -11,7 +11,6 @@ def validate_cols(_cols):
 
 def validate_funcs(_func):
   for f in _func:
-    print(f)
     assert f[0] in ["AVG", "VAR", "COUNT"]
     assert f[1] in (["col"+str(i+1) for i in range(COLNUMS)] + ["labels"])
 
