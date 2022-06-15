@@ -89,7 +89,7 @@ def run_query(url, cols, func, eps):
 	return result_df
 
 
-def get_synth_data(url, synthn_model, eps):
+def get_synth_data(url, synth_model, eps):
 
 	raw_data = requests.get(**generate_synth_data(url, synth_model, eps))
 
@@ -122,7 +122,7 @@ def submit_predictions_comp(comp_url, user_name, predictions):
 
 # function to submit an array or list of predictions for sandbox
 
-def submit_predictions_comp(comp_url, user_name, predictions):
+def submit_predictions_sandbox(comp_url, user_name, predictions):
 
   test_x = pd.read_csv('./AIEthicon/data/SANDBOX_TEST_X.csv',index_col='id')
 
