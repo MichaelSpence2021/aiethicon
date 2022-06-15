@@ -118,7 +118,7 @@ def submit_predictions_comp(comp_url, user_name, predictions):
 
   response = requests.post(comp_url+'/submit', files = {"file": open("submission.csv", "rb")}, headers={"X-OBLV-User-Name":user_name})
 
-  return response
+  return response.content
 
 # function to submit an array or list of predictions for sandbox
 
@@ -134,4 +134,4 @@ def submit_predictions_sandbox(comp_url, user_name, predictions):
 
   response = requests.post(comp_url+'/submit', files = {"file": open("submission.csv", "rb")}, headers={"X-OBLV-User-Name":user_name})
 
-  return response
+  return response.content
