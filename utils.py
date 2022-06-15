@@ -108,7 +108,7 @@ def get_synth_data(url, synth_model, eps):
 
 def submit_predictions_comp(comp_url, user_name, predictions):
 
-  test_x = pd.read_csv('./AIEthicon/data/TEST_X.csv',index_col='id')
+  test_x = pd.read_csv('./aiethicon/data/TEST_X.csv',index_col='id')
 
   # make prediciton dataframe and save to file
 
@@ -124,7 +124,7 @@ def submit_predictions_comp(comp_url, user_name, predictions):
 
 def submit_predictions_sandbox(comp_url, user_name, predictions):
 
-  test_x = pd.read_csv('./AIEthicon/data/SANDBOX_TEST_X.csv',index_col='id')
+  test_x = pd.read_csv('./aiethicon/data/SANDBOX_TEST_X.csv',index_col='id')
 
   # make prediciton dataframe and save to file
 
